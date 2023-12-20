@@ -46,6 +46,20 @@ export let defineProjections = function (modelClass) {
   });
 
   modelClass.defineProjection('КлючL', 'i-i-s-postamat15-ключ', {
-    
+    сгенКлюч: attr('Сген ключ', { index: 0 }),
+    уведомление: attr('Уведомление', { index: 1 }),
+    номер: attr('Номер', { index: 2 }),
+    фИО: attr('ФИО', { index: 3 }),
+    посылка: belongsTo('i-i-s-postamat15-посылка', 'Номер', {
+      номер: attr('Номер', { index: 4 })
+    }, { index: -1, hidden: true }),
+    пользователь: belongsTo('i-i-s-postamat15-пользователь', 'ФИО', {
+      фИО: attr('ФИО', { index: 5 })
+    }, { index: -1, hidden: true }),
+    хранение: belongsTo('i-i-s-postamat15-хранение', 'Продления', {
+      продления: attr('Продления', { index: 6 }),
+      датаНачала: attr('Дата начала хранения', { index: 7 }),
+      датаЗавершения: attr('Дата завершения хранения', { index: 8 })
+    }, { index: -1, hidden: true })
   });
 };

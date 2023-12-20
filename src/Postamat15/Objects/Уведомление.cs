@@ -28,8 +28,25 @@ namespace IIS.Postamat15
     // *** End programmer edit section *** (Уведомление CustomAttributes)
     [AutoAltered()]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
-    [View("УведомлениеE", new string[0])]
-    [View("УведомлениеL", new string[0])]
+    [View("УведомлениеE", new string[] {
+            "Уведомление as \'Уведомление\'",
+            "СгенКлюч as \'Сген ключ\'",
+            "Номер as \'Номер\'",
+            "ФИО as \'ФИО\'",
+            "Хранение as \'Хранение\'",
+            "Хранение.Продления as \'Продление\'",
+            "Хранение.ДатаНачала as \'Дата начала хранения\'",
+            "Хранение.ДатаЗавершения as \'Дата завершения хранения\'"}, Hidden=new string[] {
+            "Хранение.Продления"})]
+    [MasterViewDefineAttribute("УведомлениеE", "Хранение", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Продления")]
+    [View("УведомлениеL", new string[] {
+            "Уведомление as \'Уведомление\'",
+            "СгенКлюч as \'Сген ключ\'",
+            "Номер as \'Номер\'",
+            "ФИО as \'ФИО\'",
+            "Хранение.Продления as \'Продление\'",
+            "Хранение.ДатаНачала as \'Дата начала хранения\'",
+            "Хранение.ДатаЗавершения as \'Дата завершения хранения\'"})]
     public class Уведомление : ICSSoft.STORMNET.DataObject
     {
         

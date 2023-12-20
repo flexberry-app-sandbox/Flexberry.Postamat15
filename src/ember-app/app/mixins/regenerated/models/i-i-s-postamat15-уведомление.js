@@ -50,10 +50,26 @@ export let ValidationRules = {
 
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('УведомлениеE', 'i-i-s-postamat15-уведомление', {
-    
+    уведомление: attr('Уведомление', { index: 0 }),
+    сгенКлюч: attr('Сген ключ', { index: 1 }),
+    номер: attr('Номер', { index: 2 }),
+    фИО: attr('ФИО', { index: 3 }),
+    хранение: belongsTo('i-i-s-postamat15-хранение', 'Хранение', {
+      продления: attr('Продление', { index: 5, hidden: true }),
+      датаНачала: attr('Дата начала хранения', { index: 6 }),
+      датаЗавершения: attr('Дата завершения хранения', { index: 7 })
+    }, { index: 4, displayMemberPath: 'продления' })
   });
 
   modelClass.defineProjection('УведомлениеL', 'i-i-s-postamat15-уведомление', {
-    
+    уведомление: attr('Уведомление', { index: 0 }),
+    сгенКлюч: attr('Сген ключ', { index: 1 }),
+    номер: attr('Номер', { index: 2 }),
+    фИО: attr('ФИО', { index: 3 }),
+    хранение: belongsTo('i-i-s-postamat15-хранение', 'Продление', {
+      продления: attr('Продление', { index: 4 }),
+      датаНачала: attr('Дата начала хранения', { index: 5 }),
+      датаЗавершения: attr('Дата завершения хранения', { index: 6 })
+    }, { index: -1, hidden: true })
   });
 };
