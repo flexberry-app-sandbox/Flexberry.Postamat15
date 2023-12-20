@@ -42,7 +42,21 @@ export let defineBaseModel = function (modelClass) {
 
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('КлючE', 'i-i-s-postamat15-ключ', {
-    
+    сгенКлюч: attr('Сген ключ', { index: 0 }),
+    уведомление: attr('Уведомление', { index: 1 }),
+    номер: attr('Номер', { index: 2 }),
+    фИО: attr('ФИО', { index: 3 }),
+    посылка: belongsTo('i-i-s-postamat15-посылка', 'Посылка', {
+      номер: attr('Номер', { index: 5, hidden: true })
+    }, { index: 4, displayMemberPath: 'номер' }),
+    пользователь: belongsTo('i-i-s-postamat15-пользователь', 'Пользователь', {
+      фИО: attr('ФИО', { index: 7, hidden: true })
+    }, { index: 6, displayMemberPath: 'фИО' }),
+    хранение: belongsTo('i-i-s-postamat15-хранение', 'Хранение', {
+      продления: attr('Продление', { index: 9 }),
+      датаНачала: attr('Дата начала хранения', { index: 10 }),
+      датаЗавершения: attr('Дата завершения хранения', { index: 11 })
+    }, { index: 8 })
   });
 
   modelClass.defineProjection('КлючL', 'i-i-s-postamat15-ключ', {

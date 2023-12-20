@@ -22,55 +22,55 @@ export default Controller.extend({
             link: 'i-i-s-postamat15-посылка-l',
             caption: i18n.t('forms.application.sitemap.postamat15.i-i-s-postamat15-посылка-l.caption'),
             title: i18n.t('forms.application.sitemap.postamat15.i-i-s-postamat15-посылка-l.title'),
-            icon: 'book',
+            icon: 'phone',
             children: null
           }, {
             link: 'i-i-s-postamat15-постамат-l',
             caption: i18n.t('forms.application.sitemap.postamat15.i-i-s-postamat15-постамат-l.caption'),
             title: i18n.t('forms.application.sitemap.postamat15.i-i-s-postamat15-постамат-l.title'),
-            icon: 'edit',
+            icon: 'briefcase',
             children: null
           }, {
             link: 'i-i-s-postamat15-ячейка-l',
             caption: i18n.t('forms.application.sitemap.postamat15.i-i-s-postamat15-ячейка-l.caption'),
             title: i18n.t('forms.application.sitemap.postamat15.i-i-s-postamat15-ячейка-l.title'),
-            icon: 'edit',
+            icon: 'tasks',
             children: null
           }, {
             link: 'i-i-s-postamat15-служба-доставки-l',
             caption: i18n.t('forms.application.sitemap.postamat15.i-i-s-postamat15-служба-доставки-l.caption'),
             title: i18n.t('forms.application.sitemap.postamat15.i-i-s-postamat15-служба-доставки-l.title'),
-            icon: 'phone',
+            icon: 'book',
             children: null
           }, {
             link: 'i-i-s-postamat15-уведомление-l',
             caption: i18n.t('forms.application.sitemap.postamat15.i-i-s-postamat15-уведомление-l.caption'),
             title: i18n.t('forms.application.sitemap.postamat15.i-i-s-postamat15-уведомление-l.title'),
-            icon: 'briefcase',
+            icon: 'paperclip',
             children: null
           }, {
             link: 'i-i-s-postamat15-логистика-l',
             caption: i18n.t('forms.application.sitemap.postamat15.i-i-s-postamat15-логистика-l.caption'),
             title: i18n.t('forms.application.sitemap.postamat15.i-i-s-postamat15-логистика-l.title'),
-            icon: 'edit',
+            icon: 'building',
             children: null
           }, {
             link: 'i-i-s-postamat15-ключ-l',
             caption: i18n.t('forms.application.sitemap.postamat15.i-i-s-postamat15-ключ-l.caption'),
             title: i18n.t('forms.application.sitemap.postamat15.i-i-s-postamat15-ключ-l.title'),
-            icon: 'suitcase',
+            icon: 'book',
             children: null
           }, {
             link: 'i-i-s-postamat15-пользователь-l',
             caption: i18n.t('forms.application.sitemap.postamat15.i-i-s-postamat15-пользователь-l.caption'),
             title: i18n.t('forms.application.sitemap.postamat15.i-i-s-postamat15-пользователь-l.title'),
-            icon: 'suitcase',
+            icon: 'phone',
             children: null
           }, {
             link: 'i-i-s-postamat15-хранение-l',
             caption: i18n.t('forms.application.sitemap.postamat15.i-i-s-postamat15-хранение-l.caption'),
             title: i18n.t('forms.application.sitemap.postamat15.i-i-s-postamat15-хранение-l.title'),
-            icon: 'briefcase',
+            icon: 'table',
             children: null
           }]
         }

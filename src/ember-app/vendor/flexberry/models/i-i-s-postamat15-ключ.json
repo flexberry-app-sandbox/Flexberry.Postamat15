@@ -37,8 +37,109 @@
     {
       "name": "КлючE",
       "modelName": "i-i-s-postamat15-ключ",
-      "attrs": [],
-      "belongsTo": [],
+      "attrs": [
+        {
+          "name": "сгенКлюч",
+          "caption": "Сген ключ",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "уведомление",
+          "caption": "Уведомление",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "фИО",
+          "caption": "ФИО",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Номер",
+          "lookupValueField": "номер",
+          "relationName": "Посылка",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номер",
+              "caption": "Номер",
+              "hidden": true,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "standard",
+          "caption": "Посылка",
+          "name": "посылка",
+          "relatedTo": "i-i-s-postamat15-посылка",
+          "inverse": null
+        },
+        {
+          "lookupValue": "ФИО",
+          "lookupValueField": "фИО",
+          "relationName": "Пользователь",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": true,
+              "index": 7
+            }
+          ],
+          "index": 6,
+          "type": "standard",
+          "caption": "Пользователь",
+          "name": "пользователь",
+          "relatedTo": "i-i-s-postamat15-пользователь",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Хранение",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "продления",
+              "caption": "Продление",
+              "hidden": false,
+              "index": 9
+            },
+            {
+              "name": "датаНачала",
+              "caption": "Дата начала хранения",
+              "hidden": false,
+              "index": 10
+            },
+            {
+              "name": "датаЗавершения",
+              "caption": "Дата завершения хранения",
+              "hidden": false,
+              "index": 11
+            }
+          ],
+          "index": 8,
+          "type": "default",
+          "caption": "Хранение",
+          "name": "хранение",
+          "relatedTo": "i-i-s-postamat15-хранение",
+          "inverse": null
+        }
+      ],
       "hasMany": []
     },
     {
