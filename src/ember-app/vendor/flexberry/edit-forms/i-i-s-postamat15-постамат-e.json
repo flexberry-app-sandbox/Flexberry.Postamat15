@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": "хранение",
+      "displayAttributeName": "продления",
+      "required": true,
+      "relationName": "РегистрХран.Хранение",
+      "projection": "ХранениеL",
+      "detailModelName": "i-i-s-postamat15-регистр-хран"
+    }
+  ],
+  "external": false,
+  "caption": "Постамат",
+  "name": "IISPostamat15ПостаматE",
+  "className": "ПостаматE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-postamat15-постамат",
+      "modelProjection": "ПостаматE"
+    }
+  ]
+}

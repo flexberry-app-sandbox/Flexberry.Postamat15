@@ -1,0 +1,78 @@
+﻿{
+  "applicationCaption": "Postamat15",
+  "applicationTitle": "Postamat15",
+  "items": [
+    {
+      "link": null,
+      "menuName": "postamat15",
+      "caption": "Postamat15",
+      "title": "Postamat15",
+      "children": [
+        {
+          "link": "i-i-s-postamat15-посылка-l",
+          "menuName": null,
+          "caption": "Посылка",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-postamat15-постамат-l",
+          "menuName": null,
+          "caption": "Постамат",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-postamat15-ячейка-l",
+          "menuName": null,
+          "caption": "Ячейка",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-postamat15-служба-доставки-l",
+          "menuName": null,
+          "caption": "Служба доставки",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-postamat15-уведомление-l",
+          "menuName": null,
+          "caption": "Уведомление",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-postamat15-логистика-l",
+          "menuName": null,
+          "caption": "Логистика",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-postamat15-ключ-l",
+          "menuName": null,
+          "caption": "Ключ",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-postamat15-пользователь-l",
+          "menuName": null,
+          "caption": "Пользователь",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-postamat15-хранение-l",
+          "menuName": null,
+          "caption": "Хранение",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}
