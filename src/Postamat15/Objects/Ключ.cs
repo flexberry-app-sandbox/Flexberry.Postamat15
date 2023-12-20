@@ -28,31 +28,8 @@ namespace IIS.Postamat15
     // *** End programmer edit section *** (Ключ CustomAttributes)
     [AutoAltered()]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
-    [View("КлючE", new string[] {
-            "СгенКлюч as \'Сген ключ\'",
-            "Уведомление as \'Уведомление\'",
-            "Номер as \'Номер\'",
-            "ФИО as \'ФИО\'",
-            "Посылка as \'Посылка\'",
-            "Посылка.Номер as \'Номер\'",
-            "Пользователь as \'Пользователь\'",
-            "Пользователь.ФИО as \'ФИО\'",
-            "Хранение as \'Хранение\'",
-            "Хранение.Продления as \'Продления\'"}, Hidden=new string[] {
-            "Посылка.Номер",
-            "Пользователь.ФИО",
-            "Хранение.Продления"})]
-    [MasterViewDefineAttribute("КлючE", "Посылка", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Номер")]
-    [MasterViewDefineAttribute("КлючE", "Пользователь", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "ФИО")]
-    [MasterViewDefineAttribute("КлючE", "Хранение", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Продления")]
-    [View("КлючL", new string[] {
-            "СгенКлюч as \'Сген ключ\'",
-            "Уведомление as \'Уведомление\'",
-            "Номер as \'Номер\'",
-            "ФИО as \'ФИО\'",
-            "Посылка.Номер as \'Номер\'",
-            "Пользователь.ФИО as \'ФИО\'",
-            "Хранение.Продления as \'Продления\'"})]
+    [View("КлючE", new string[0])]
+    [View("КлючL", new string[0])]
     public class Ключ : IIS.Postamat15.Уведомление
     {
         

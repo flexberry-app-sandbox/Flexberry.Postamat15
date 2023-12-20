@@ -48,7 +48,12 @@ export let defineProjections = function (modelClass) {
     регистрХран: hasMany('i-i-s-postamat15-регистр-хран', 'Регистр хран', {
       номер: attr('Номер', { index: 0 }),
       хранение: belongsTo('i-i-s-postamat15-хранение', 'Хранение', {
-        продления: attr('Продления', { index: 2, hidden: true })
+        продления: attr('Продления', { index: 2, hidden: true }),
+        датаНачала: attr('Дата начала хранения', { index: 3 }),
+        датаЗавершения: attr('Дата завершения хранения', { index: 4 }),
+        ячейка: belongsTo('i-i-s-postamat15-ячейка', '', {
+          номерЯчейки: attr('Номер ячейки', { index: 5 })
+        }, { index: -1, hidden: true })
       }, { index: 1, displayMemberPath: 'продления' })
     })
   });
